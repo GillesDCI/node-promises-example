@@ -2,9 +2,9 @@ import fs from 'fs';
 import { promises as fsPromises } from 'fs';
 
 //write a file using the promises 
-//fsPromises.writeFile("test.txt","Hello test")
+fsPromises.writeFile("test.txt","Hello test","utf-8")
 //alternative to append
-fsPromises.writeFile("test.txt","Hello test",{encoding:'utf-8', flag:"a"})
+//fsPromises.writeFile("test.txt","Hello test",{encoding:'utf-8', flag:"a"})
 
 //reading the content of the file synchronously.
 const content = fs.readFileSync("test.txt",'utf-8');
